@@ -23,7 +23,7 @@ class _MainHomePageState extends State<MainHomePage> {
               'assets/images/zuckerberk.png',
             )),
         Padding(
-          padding: const EdgeInsets.only(top: 515, left: 118),
+          padding: const EdgeInsets.only(top: 516, left: 118),
           child: CupertinoButton(
             onPressed: () {
               Navigator.push(context,
