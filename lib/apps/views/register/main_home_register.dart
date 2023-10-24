@@ -15,7 +15,7 @@ class _MainHomePageState extends State<MainHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stack(children: [
-        Image(
+        const Image(
             fit: BoxFit.cover,
             width: double.infinity,
             height: double.infinity,
@@ -27,9 +27,9 @@ class _MainHomePageState extends State<MainHomePage> {
           child: CupertinoButton(
             onPressed: () {
               Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => seconPage()));
+                  MaterialPageRoute(builder: (context) => SeconPage()));
             },
-            child: Column(
+            child: const Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(

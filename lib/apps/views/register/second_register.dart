@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:work_r/apps/views/navBar%20view/navbar_view.dart';
 import 'components/my_button.dart';
 import 'login/login.dart';
 import 'signIn/signIn.dart';
 
-class seconPage extends StatelessWidget {
-  const seconPage({super.key});
+class SeconPage extends StatelessWidget {
+  const SeconPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +14,7 @@ class seconPage extends StatelessWidget {
       body: Column(
         children: [
           Stack(children: [
-            Image(
+            const Image(
                 fit: BoxFit.cover,
                 height: 720,
                 width: 1280,
@@ -25,7 +26,7 @@ class seconPage extends StatelessWidget {
                   My_Button(
                       ontap: () {
                         Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => login()));
+                            MaterialPageRoute(builder: (context) => Login()));
                       },
                       containerColor: Color(
                         0xff5FA1EF,
@@ -38,16 +39,23 @@ class seconPage extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => register()));
+                                builder: (context) => Register()));
                       },
                       containerColor: Colors.white,
                       text: 'Регистрация',
                       color: Color(0xffAFAFAF)),
                   SizedBox(height: 30),
                   My_Button(
-                      containerColor: Colors.white,
-                      text: 'Продолжить без входа',
-                      color: Color(0xffAFAFAF))
+                    containerColor: Colors.white,
+                    text: 'Продолжить без входа',
+                    color: Color(0xffAFAFAF),
+                    ontap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => NavbarPage()),
+                      );
+                    },
+                  )
                 ],
               ),
             )

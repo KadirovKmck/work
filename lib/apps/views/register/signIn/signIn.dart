@@ -4,14 +4,14 @@ import 'package:work_r/apps/views/register/components/login_widget_ui.dart';
 
 import 'next_page.dart';
 
-class register extends StatefulWidget {
-  const register({super.key});
+class Register extends StatefulWidget {
+  const Register({super.key});
 
   @override
-  State<register> createState() => _registerState();
+  State<Register> createState() => _RegisterState();
 }
 
-class _registerState extends State<register> {
+class _RegisterState extends State<Register> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -80,7 +80,7 @@ class _registerState extends State<register> {
                     ),
                   ),
                 ),
-              )
+              ),
             ],
           ),
         ),

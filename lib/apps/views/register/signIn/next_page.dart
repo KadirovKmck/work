@@ -12,7 +12,7 @@ class NextPage extends StatelessWidget {
         decoration: BoxDecoration(borderRadius: BorderRadius.circular(30)),
         height: 932,
         width: 430,
-        child: Stack(children: [
+        child: const Stack(children: [
           Padding(
             padding: const EdgeInsets.only(top: 50, right: 30),
             child: Align(
