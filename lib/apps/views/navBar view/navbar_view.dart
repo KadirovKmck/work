@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:work_r/apps/views/HomeView.dart';
+import 'package:work_r/apps/views/settings/settingLungue.dart';
 import 'package:work_r/apps/views/tender%20app/tenderView.dart';
 
 class NavbarPage extends StatefulWidget {
@@ -11,6 +13,7 @@ class NavbarPage extends StatefulWidget {
 class _NavbarPageState extends State<NavbarPage> {
   int _selectedInhdex = 0;
   final _screens = [
+    HomeView(),
     TenderView(),
   ];
   @override
