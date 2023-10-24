@@ -5,7 +5,9 @@ class TenderView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final text = MediaQuery.of(context).size.height * 2;
+    final text = MediaQuery.of(context).size.height;
+    final teext = MediaQuery.of(context).size.width;
+
     return Scaffold(
       backgroundColor: Color(0xff464646),
       body: Column(
@@ -25,21 +27,23 @@ class TenderView extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: 53,
-              width: 401,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(3),
-                color: Colors.white,
-              ),
-              child: const Center(
-                child: Text(
-                  'У меня есть доступ',
-                  style: TextStyle(
-                      color: Color(0xff979797),
-                      fontSize: 18,
-                      fontFamily: 'Quicksand',
-                      fontWeight: FontWeight.w500),
+            child: Center(
+              child: Container(
+                height: text * 0.06,
+                width: teext * 0.9,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(3),
+                  color: Colors.white,
+                ),
+                child: const Center(
+                  child: Text(
+                    'У меня есть доступ',
+                    style: TextStyle(
+                        color: Color(0xff979797),
+                        fontSize: 18,
+                        fontFamily: 'Quicksand',
+                        fontWeight: FontWeight.w500),
+                  ),
                 ),
               ),
             ),
@@ -50,8 +54,8 @@ class TenderView extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Container(
-              height: 53,
-              width: 401,
+              height: text * 0.06,
+              width: teext * 0.9,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(3),
                 color: Colors.white,
