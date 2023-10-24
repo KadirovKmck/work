@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:work_r/apps/views/HomeView.dart';
 import 'package:work_r/apps/views/tender%20app/tenderView.dart';
 
 class NavbarPage extends StatefulWidget {
@@ -11,6 +12,7 @@ class NavbarPage extends StatefulWidget {
 class _NavbarPageState extends State<NavbarPage> {
   int _selectedInhdex = 0;
   final _screens = [
+    HomeView(),
     TenderView(),
   ];
   @override
@@ -36,13 +38,12 @@ class _NavbarPageState extends State<NavbarPage> {
             });
           },
           items: [
-            BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+            BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Главная'),
             BottomNavigationBarItem(
-                icon: Icon(Icons.chat_rounded), label: 'Messeges'),
+                icon: Icon(Icons.logout_outlined), label: 'Каталог'),
             BottomNavigationBarItem(
-                icon: Icon(Icons.calendar_month_outlined), label: 'Schedule'),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.settings), label: 'Settings'),
+                icon: Icon(Icons.import_contacts), label: 'Курс языка'),
+            BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Профиль'),
           ],
         ),
       ),
